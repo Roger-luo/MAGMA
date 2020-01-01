@@ -24,7 +24,7 @@
     #if defined(MAGMA_GLOBAL)
         #define FORTRAN_NAME(lcname, UCNAME)  MAGMA_GLOBAL( lcname, UCNAME )
     #elif defined(ADD_)
-        #define FORTRAN_NAME(lcname, UCNAME)  lcname##_
+        #define FORTRAN_NAME(lcname, UCNAME)  lcname##64_
     #elif defined(NOCHANGE)
         #define FORTRAN_NAME(lcname, UCNAME)  lcname
     #elif defined(UPCASE)
