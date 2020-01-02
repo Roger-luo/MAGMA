@@ -8,7 +8,7 @@ if (ILP64)
     set( CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -DMAGMA_ILP64" )
     set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DMAGMA_ILP64" )
     set( CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS};-DMAGMA_ILP64" )  # semicolon
-    set( CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -fdefault-integer-8" )s
+    set( CMAKE_Fortran_FLAGS "${CMAKE_Fortran_FLAGS} -fdefault-integer-8" )
 endif()
 
 # ----------------------------------------
