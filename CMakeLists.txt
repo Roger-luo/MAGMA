@@ -3,7 +3,7 @@ cmake_minimum_required( VERSION 2.8.1 )
 # ----------------------------------------
 # Ideally, CMake would auto-detect ILP64 in the BLAS/LAPACK library.
 # As a work-around, make it an option.
-option( ILP64 "BLAS and LAPACK are ILP64 (64-bit int) instead of usual LP64 (32-bit int)." off )
+option( ILP64 "BLAS and LAPACK are ILP64 (64-bit int) instead of usual LP64 (32-bit int)." ON )
 if (ILP64)
     set( CMAKE_C_FLAGS   "${CMAKE_C_FLAGS} -DMAGMA_ILP64" )
     set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DMAGMA_ILP64" )
