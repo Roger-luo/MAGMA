@@ -19,7 +19,10 @@
  *   include/magma_*lapack.h
  *   control/magma_*f77.cpp
  */
+#ifndef ADD_
 #define ADD_
+#endif
+
 #ifndef MAGMA_FORTRAN_NAME
     #if defined(MAGMA_GLOBAL)
         #define FORTRAN_NAME(lcname, UCNAME)  MAGMA_GLOBAL( lcname, UCNAME )
