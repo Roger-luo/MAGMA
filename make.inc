@@ -54,7 +54,7 @@ CFLAGS   += -std=c99
 # libraries
 
 # gcc with OpenBLAS (includes LAPACK)
-LIB       = -lopenblas
+LIB       = -lopenblas64_
 
 LIB      += -lcublas -lcusparse -lcudart -lcudadevrt
 
