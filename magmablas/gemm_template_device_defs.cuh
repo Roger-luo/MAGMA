@@ -1,9 +1,9 @@
 /*
-    -- MAGMA (version 2.0) --
+    -- MAGMA (version 2.5.1) --
        Univ. of Tennessee, Knoxville
        Univ. of California, Berkeley
        Univ. of Colorado, Denver
-       @date
+       @date August 2019
        
        @author Jakub Kurzak
        @author Stan Tomov
@@ -79,13 +79,6 @@ FloatingPoint_t tex_fetch(texture<float> tex_ref, int coord)
     #define div(A, B)        cuCdivf(A, B)
     #define fma(A, B, C) C = cuCfmaf(A, B, C)
     #define make_FloatingPoint(x, y) make_cuFloatComplex(x, y)
-#elif defined(PRECISION_h)
-    #define conj(A)           (A)
-    #define add(A, B)         (A+B)
-    #define mul(A, B)         (A*B)
-    #define div(A, B)         (A/B)
-    #define fma(A, B, C) C += (A*B)
-    #define make_FloatingPoint(x, y) ((magmaHalf)x)
 #else
     #define conj(A)           (A)
     #define add(A, B)         (A+B)

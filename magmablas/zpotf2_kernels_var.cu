@@ -1,9 +1,9 @@
 /*
-   -- MAGMA (version 1.4) --
+   -- MAGMA (version 2.5.1) --
    Univ. of Tennessee, Knoxville
    Univ. of California, Berkeley
    Univ. of Colorado, Denver
-   @date
+   @date August 2019
 
    @author Azzam Haidar
    @author Ahmad Abdelfattah
