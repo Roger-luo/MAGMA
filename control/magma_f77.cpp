@@ -6,11 +6,11 @@ extern "C" {
 #endif
 
 /*
-    -- MAGMA (version 2.0) --
+    -- MAGMA (version 2.5.1) --
        Univ. of Tennessee, Knoxville
        Univ. of California, Berkeley
        Univ. of Colorado, Denver
-       @date
+       @date August 2019
 */
 
 // -----------------------------------------------------------------------------

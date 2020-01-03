@@ -9,7 +9,7 @@
 #ifndef MAGMA_MANGLING_H
 #define MAGMA_MANGLING_H
 
-#include "magma_mangling_cmake.h"
+//#include "magma_mangling_cmake.h"
 
 /* Define how to name mangle Fortran names.
  * If using CMake, it defines MAGMA_GLOBAL in magma_mangling_cmake.h
@@ -19,11 +19,15 @@
  *   include/magma_*lapack.h
  *   control/magma_*f77.cpp
  */
+#ifndef ADD_
+#define ADD_
+#endif
+
 #ifndef MAGMA_FORTRAN_NAME
     #if defined(MAGMA_GLOBAL)
         #define FORTRAN_NAME(lcname, UCNAME)  MAGMA_GLOBAL( lcname, UCNAME )
     #elif defined(ADD_)
-        #define FORTRAN_NAME(lcname, UCNAME)  lcname##_
+        #define FORTRAN_NAME(lcname, UCNAME)  lcname##_64_
     #elif defined(NOCHANGE)
         #define FORTRAN_NAME(lcname, UCNAME)  lcname
     #elif defined(UPCASE)
