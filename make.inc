@@ -51,6 +51,15 @@ CFLAGS   += -std=c99
 
 
 # --------------------
+# ilp64 options 
+CFLAGS   += -DMAGMA_ILP64
+CXXFLAGS += -DMAGMA_ILP64
+NVCCFLAGS+= -DMAGMA_ILP64
+FFLAGS   += -fdefault-integer-8
+F90FLAGS += -fdefault-integer-8
+
+
+# --------------------
 # libraries
 
 # gcc with OpenBLAS (includes LAPACK)
