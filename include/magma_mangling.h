@@ -9,7 +9,7 @@
 #ifndef MAGMA_MANGLING_H
 #define MAGMA_MANGLING_H
 
-#include "magma_mangling_cmake.h"
+// #include "magma_mangling_cmake.h"
 
 /* Define how to name mangle Fortran names.
  * If using CMake, it defines MAGMA_GLOBAL in magma_mangling_cmake.h
