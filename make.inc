@@ -63,7 +63,7 @@ F90FLAGS += -fdefault-integer-8
 # libraries
 
 # gcc with OpenBLAS (includes LAPACK)
-LIB       = -lopenblas
+LIB       = -lopenblas64_
 
 LIB      += -lcublas -lcusparse -lcudart -lcudadevrt
 
