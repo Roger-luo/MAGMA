@@ -11,6 +11,10 @@
 
 // #include "magma_mangling_cmake.h"
 
+#ifndef ADD_
+#define ADD_
+#endif
+
 /* Define how to name mangle Fortran names.
  * If using CMake, it defines MAGMA_GLOBAL in magma_mangling_cmake.h
  * Otherwise, the make.inc file should have one of -DADD_, -DNOCHANGE, or -DUPCASE.
