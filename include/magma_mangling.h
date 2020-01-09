@@ -1,15 +1,19 @@
 /*
-    -- MAGMA (version 2.0) --
+    -- MAGMA (version 2.5.2) --
        Univ. of Tennessee, Knoxville
        Univ. of California, Berkeley
        Univ. of Colorado, Denver
-       @date
+       @date November 2019
 */
 
 #ifndef MAGMA_MANGLING_H
 #define MAGMA_MANGLING_H
 
-#include "magma_mangling_cmake.h"
+// #include "magma_mangling_cmake.h"
+
+#ifndef ADD_
+#define ADD_
+#endif
 
 /* Define how to name mangle Fortran names.
  * If using CMake, it defines MAGMA_GLOBAL in magma_mangling_cmake.h
@@ -23,7 +27,7 @@
     #if defined(MAGMA_GLOBAL)
         #define FORTRAN_NAME(lcname, UCNAME)  MAGMA_GLOBAL( lcname, UCNAME )
     #elif defined(ADD_)
-        #define FORTRAN_NAME(lcname, UCNAME)  lcname##_
+        #define FORTRAN_NAME(lcname, UCNAME)  lcname##_64_
     #elif defined(NOCHANGE)
         #define FORTRAN_NAME(lcname, UCNAME)  lcname
     #elif defined(UPCASE)

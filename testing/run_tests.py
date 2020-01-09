@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 #
-# MAGMA (version 2.0) --
+# MAGMA (version 2.5.2) --
 # Univ. of Tennessee, Knoxville
 # Univ. of California, Berkeley
 # Univ. of Colorado, Denver
-# @date
+# @date November 2019
 
 ## @file
 #  @author Mark Gates
